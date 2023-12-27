@@ -38,3 +38,10 @@ function contact_btn( $items, $args ) {
 }
 
 add_filter( 'wp_nav_menu_items', 'contact_btn', 10, 2 );
+
+function theme_enqueue_scripts() {
+    wp_enqueue_script('child-script', get_stylesheet_directory_uri() . '/scripts/script.js', 
+       
+    );
+}
+add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
