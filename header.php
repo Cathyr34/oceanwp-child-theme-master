@@ -70,9 +70,9 @@ $lien=get_field('lien_google_maps', 161);
 				<?php echo $date; ?>
 			</div>
 		</div>
-		<button id="myButton" class="popup-btn popup-salon wpcf7">Vous souhaitez plus d'informations concernant cet événement ?</button>
+		<button id="myButton" class="popup-btn popup-informations wpcf7-submit">Vous souhaitez plus d'informations concernant cet événement ?</button>
 		
-		<?php
+		<?php echo
 		// On insère le formulaire de demandes de renseignements
 		do_shortcode('[contact-form-7 id="910" title="Formulaire salon New York"]');
 		?>
